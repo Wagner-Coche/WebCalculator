@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Web Calculator</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header id="header">
+                <div class="jumbotron">
+                    <h1><span class="text-header"><i>Web Calculator</i></span>🧮</h1>
+                </div>
+            </header>
+            <main id="main">
+                <form class="form-group form">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="number" name="input1" class="form-control input1" placeholder="Informe um número" required>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-control" id="select">
+                                <option value="">Escolha a tua operação</option>
+                                <option value="1">Adição</option>
+                                <option value="2">Subtração</option>
+                                <option value="3">Multiplicação</option>
+                                <option value="4">Divisão</option>
+                                <option value="5">Potência</option>
+                                <option value="6">Resto da divisão</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="number" name="input2" class="form-control input2" placeholder="Informe outro número" required>
+                        </div>
+                    </div>
+                    <input type="submit" name="button" value="Calcular" class="button">
+                </form>
+                <div class="result">
+                    <span><strong><i>Result</i></strong>:</span>
+                    <input type="text" name="result" disabled="disabled" class="form-control showResult" readonly>
+                </div>
+            </main>
+        </div>
+
+
+        <script scr="bootstrap/js/bootstrap.min.js"></script>
+        <script src="jquery/jquery-3.4.1.min.js"></script>
+        <script src="script.js"></script>
+        
+    </body>
+</html>
